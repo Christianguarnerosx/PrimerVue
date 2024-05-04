@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mi-primer-vue
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,6 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# PrimerVue
+>>>>>>> 95b92c790cd88f0e54d77f3171ee6baa41b30848
