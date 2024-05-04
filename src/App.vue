@@ -5,7 +5,7 @@ const name = 'Vue Dinamico';
 
 //metodo - methods
 
-const hacerclick = (mensaje) =>{
+const hacerclick = (mensaje) => {
     console.log(mensaje)
 }
 </script>
@@ -13,9 +13,11 @@ const hacerclick = (mensaje) =>{
 //Estructura
 //(template obligatorio)
 <template>
-    <!-- Bien, lo que vemos es -->
-<button v-on:click="hacerclick('Hola opresor 1')">Presioname</button>
-<button @:click="hacerclick('Hola crack 2')">Presioname 2</button>
+    <button @:click="hacerclick('Hola crack 2')">Presioname crack</button>
+    <button @:click="hacerclick('Opresorrrrr')">Presioname opresor</button>
+    <button @:click.right="hacerclick('Opresorrrrr')">Presioname opresor derecho</button>
+    <button v-on:click.right.prevent="hacerclick('Opresorrrrr')">Presioname opresor derecho sin opciones</button>
+    <button v-on:click.middle="hacerclick('Opresorrrrr')">Presioname opresor de en medio</button>
 </template>
 
 //Estilos
